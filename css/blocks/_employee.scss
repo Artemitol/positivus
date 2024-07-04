@@ -1,0 +1,48 @@
+.employee {
+    --padding: 40px;
+    --maxWidth: 390px;
+
+    height: 100%;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 28px;
+
+    @include mobile {
+        --padding: 40px 50px;
+        
+        max-width: var(--maxWidth);
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        column-gap: 15px;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__icon {
+        width: 34px;
+        padding: 8px;
+        align-self: flex-start;
+    }
+
+    &__image {
+        &::after {
+            content: '';
+            background-image: url(/assets/mask.svg);
+            margin-left: 10px;
+        }
+    }
+}

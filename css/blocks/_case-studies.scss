@@ -6,25 +6,23 @@
     }
 
     &__list {
-        height: fit-content;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        column-gap: 30px;
-    }
+        column-gap: 128px;
 
-    &__item {
-        height: 100%;
+        @include mobile {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
     }
 
     &__block {
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         row-gap: 20px;
 
-        &-link {
-            column-gap: 15px;
+        @include mobile {
+            row-gap: 5px;
         }
     }
 }

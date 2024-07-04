@@ -1,0 +1,38 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    row-gap: 40px;
+
+    @include mobile {
+        align-items: center;
+    }
+
+    &__list {
+        gap: 40px;
+
+        @include tablet {
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            gap: 30px;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        border: var(--border);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--border-radius);
+    }
+
+    &__button {
+        @include mobile {
+            max-width: 390px;
+            width: 100%;
+        }
+    }
+}

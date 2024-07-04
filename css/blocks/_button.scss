@@ -1,5 +1,9 @@
 .button {
     height: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding-inline: var(--button-padding-x);
     background-color: var(--color-dark-alt);
     @include space-grotesk(400);

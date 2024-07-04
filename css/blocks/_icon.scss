@@ -6,6 +6,7 @@
     svg *[stroke] { stroke: currentColor; }
 
     &--no-bg {
+        width: fit-content;
         padding: 0;
     }
 }

@@ -5,10 +5,22 @@
     flex-direction: column;
     row-gap: var(--section-row-gap);
 
-    &__header {
+    &__header-wrapper {
+        width: 100%;
         display: flex;
         flex-direction: row; 
+        align-items: center;    
+        
+        @include mobile {
+            justify-content: center;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
         align-items: center;
+        justify-content: start;
         column-gap: 40px;
 
         span { white-space: nowrap; }
@@ -16,7 +28,12 @@
         @include mobile {
             flex-direction: column;
             row-gap: 30px;
+            justify-content: center;
             text-align: center;
+        }
+
+        &-paragraph {
+            max-width: 580px;
         }
     }
 }
