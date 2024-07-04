@@ -1,0 +1,13 @@
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+
+    &__label {
+        @include hover {
+            background-color: var(--color-light);
+        }
+    }
+}
+

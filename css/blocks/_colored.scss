@@ -1,0 +1,9 @@
+.colored {
+    padding-inline: 7px;
+    border-radius: 7px;
+    background-color: var(--color-accent);
+
+    &--light {
+        background-color: var(--color-light);
+    }
+}

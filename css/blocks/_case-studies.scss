@@ -1,0 +1,30 @@
+.case-studies {
+    border-radius: var(--border-radius);
+
+    &__content {
+        padding: 70px 60px;
+    }
+
+    &__list {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+
+    &__item {
+        height: 100%;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+
+        &-link {
+            column-gap: 15px;
+        }
+    }
+}

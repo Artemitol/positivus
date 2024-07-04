@@ -1,0 +1,50 @@
+@mixin space-grotesk($font-weight: 400) {
+    font-family: var(--font-family-main);
+    font-style: var(--font-style);
+    font-weight: $font-weight;
+}
+
+@mixin hover {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+    @media (hover: none) {
+        &:active {
+            @content;
+        }
+    }
+}
+
+@mixin hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@mixin hidden-desktop {
+    @include desktop {
+        @include hidden;
+    }
+}
+
+@mixin hidden-tablet {
+    @include tablet {
+        @include hidden;
+    }
+}
+
+@mixin hidden-mobile {
+    @include mobile {
+        @include hidden;
+    }
+}
+

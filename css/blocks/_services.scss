@@ -1,0 +1,9 @@
+.services {
+    &__list {
+        gap: 40px;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: clamp(15px, 1.9vw + 0rem, 20px);
+
+    &__logo {
+        @include tablet-small {
+            max-width: 170px;
+            height: auto;
+        }
+    }
+
+    &__link {
+        display: flex;
+        height: 100%;
+    }
+    
+    &__menu {
+        display: flex;
+        flex: row;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: fit-content;
+        list-style-type: none;
+        column-gap: 40px;
+
+        @include tablet-large {
+            column-gap: 27px;
+        }
+        @include tablet-small {
+            column-gap: 23px;
+        }
+    }
+
+    &__button {
+        @include tablet-large {
+            padding-inline: calc( var(--button-padding-x) * 0.8);
+        }
+
+        @include tablet-small {
+            padding-inline: calc( var(--button-padding-x) * 0.5);
+        }
+    }
+}

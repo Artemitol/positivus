@@ -1,0 +1,69 @@
+$desktop-min: 1280;
+$tablet-max: 1279;
+$tablet-middle: 1000;
+$tablet-min: 768;
+$mobile-max: 767;
+$mobile-middle: 480;
+
+:root {
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-dark-alt: #191A23;
+    --color-accent: #B9FF66;
+    --color-grey: #F3F3F3;
+
+    --border: 1px solid var(--color-dark-alt);
+    --box-shadow: 0 5px var(--color-dark-alt);
+    --border-radius: 45px;
+
+    --font-family-main: "Space Grotesk", sans-serif;
+    --font-style: normal;
+    --line-height: 1.28;
+    --font-size: 20px;
+
+    --h1-font-size: 60px;
+    --h2-font-size: 40px;
+    --h3-font-size: 30px;
+    --h4-font-size: 20px;
+    --p-font-size: 20px;
+
+    --site-padding-x: 100px;
+    --site-padding-top: 60px;
+    --section-margin-y: 70px;
+    --section-row-gap: 80px;
+    --button-padding-x: 35px;
+    --block-margin-y: 70px;
+    
+    --desktop-min: #{$desktop-min}px;
+    --tablet-max: #{$tablet-max}px;
+    --tablet-middle: #{$tablet-middle}px;
+    --tablet-min: #{$tablet-min}px;
+    --mobile-max: #{$mobile-max}px;
+    --mobile-middle: #{$mobile-middle}px;
+
+    --transition-duration: 0.2s;
+
+    @include tablet-large {
+        --site-padding-x: 40px;
+    }
+
+    @include tablet-small {
+        --site-padding-x: 25px;
+    }
+
+
+    @include mobile {
+        --site-padding-x: 20px;
+        --site-padding-top: 30px;
+        --section-spacing-y: 60px;
+        --section-row-gap: 40px;
+
+        --line-height: 1.5;
+
+        --h1-font-size: 43px;
+        --h2-font-size: 36px;
+        --h3-font-size: 26px;
+        --h4-font-size: 18px; 
+        --p-font-size: 16px;   
+    }
+}

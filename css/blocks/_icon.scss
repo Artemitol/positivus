@@ -1,0 +1,11 @@
+.icon {
+    border-radius: 50%;
+    padding: 16px 16px;
+
+    svg *[fill] { fill: currentColor; }
+    svg *[stroke] { stroke: currentColor; }
+
+    &--no-bg {
+        padding: 0;
+    }
+}

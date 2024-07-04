@@ -1,0 +1,26 @@
+.button {
+    height: 68px;
+    padding-inline: var(--button-padding-x);
+    background-color: var(--color-dark-alt);
+    @include space-grotesk(400);
+    color: var(--color-light);
+    border-radius: 14px;
+    border: 1px solid var(--color-dark-alt);
+
+    @include hover {
+        transition-duration: var(--transition-duration);
+        color: var(--color-dark-alt);
+        background-color: var(--color-accent);
+        border-color: var(--color-accent);
+    }
+
+    &--transparent {
+        color: var(--color-dark-alt);
+        background-color: var(--color-light);
+
+        @include hover {
+            background-color: var(--color-dark-alt);
+            color: var(--color-light);
+        }
+    }
+}

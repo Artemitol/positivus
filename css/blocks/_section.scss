@@ -1,0 +1,22 @@
+.section {
+    width: 100%;
+    margin-block: var(--section-margin-y);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--section-row-gap);
+
+    &__header {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        column-gap: 40px;
+
+        span { white-space: nowrap; }
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: 30px;
+            text-align: center;
+        }
+    }
+}

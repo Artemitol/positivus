@@ -1,0 +1,17 @@
+.labels {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @include mobile {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+}
