@@ -1,0 +1,9 @@
+.radio-button {
+    width: 28px;
+    height: 28px;
+
+    &:checked {
+        background-color: var(--color-accent);
+        color: var(--color-accent); 
+    }
+}

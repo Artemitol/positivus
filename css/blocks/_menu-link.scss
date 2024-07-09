@@ -1,0 +1,9 @@
+.menu-link {
+    height: 100%;
+
+    @include hover {
+        color: var(--color-accent); 
+        text-decoration-color: var(--color-accent); 
+        transition-duration: var(--transition-duration);
+    }
+}

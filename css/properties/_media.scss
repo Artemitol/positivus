@@ -36,3 +36,13 @@
     }
 } 
 
+@mixin not-mobile {
+    @include tablet {
+        @content;
+    }
+
+    @include desktop {
+        @content;
+    }
+}
+

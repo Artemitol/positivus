@@ -46,3 +46,13 @@
     &--dark-alt { color: var(--color-dark-alt) !important; }
     &--light { color: var(--color-light) !important; }
 }
+
+.in-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.in-column {
+    display: flex;
+    flex-direction: column;
+}

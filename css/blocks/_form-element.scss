@@ -1,0 +1,22 @@
+.form-element {
+    
+    &--radio {
+        display: flex;
+        flex-direction: row;
+        column-gap: 14px;
+    }
+
+    &--text, &--text-area {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    &--message {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+}

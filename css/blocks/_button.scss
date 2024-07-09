@@ -1,10 +1,12 @@
 .button {
+    width: fit-content;
     height: 68px;
+    padding-inline: var(--button-padding-x);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-inline: var(--button-padding-x);
+    white-space: nowrap;
     background-color: var(--color-dark-alt);
     @include space-grotesk(400);
     color: var(--color-light);
@@ -18,13 +20,35 @@
         border-color: var(--color-accent);
     }
 
+    @include mobile {
+        width: 100%;
+    }
+
     &--transparent {
         color: var(--color-dark-alt);
         background-color: var(--color-light);
 
         @include hover {
+            transition-duration: var(--transition-duration);
             background-color: var(--color-dark-alt);
             color: var(--color-light);
         }
+    }
+
+    &--accent {
+        color: var(--color-dark);
+        background-color: var(--color-accent);
+        border: none;
+
+        @include hover {
+            background-color: var(--color-light);
+        }
+    }
+
+    &--social {
+        height: fit-content;
+        border-radius: 50%;
+        background-color: var(--color-light);
+        padding: 0; 
     }
 }

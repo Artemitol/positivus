@@ -1,0 +1,94 @@
+.footer {
+    --footerPadding: 60px;
+    --headerListColgap: 40px;
+    --btnListColGap: 20px;
+
+    height: 100%;
+    padding: var(--footerPadding);
+    display: flex;
+    flex-direction: column;
+    row-gap: 66px;
+    border-radius: var(--border-radius);
+
+    @include tablet {
+        --footerPadding: 40px;
+        --btnListColGap: 20px;
+    }
+
+    @include tablet-large {
+        --btnListColGap: 13px;
+    }
+
+    @include tablet-small {
+        --headerListColgap: 20px;
+        --btnListColGap: 5px;
+    }
+
+    @include mobile {
+        --footerPadding: 50px 20px;
+
+        align-items: center;
+        row-gap: 37px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile {
+            display: contents;
+        }
+
+        &-logo {
+            @include tablet-small {
+                width: 90%;
+                height: auto;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: row;
+            column-gap: var(--headerListColgap);
+            text-align: center;
+            text-decoration: underline;
+
+            @include mobile {
+                flex-direction: column;
+                row-gap: 15px;
+            }
+        }
+
+        &-btn {
+            &-list {
+                display: flex;
+                flex-direction: row;
+                column-gap: var(--btnListColGap);
+
+                @include mobile {
+                    order: 1;
+                }
+            }
+        }
+
+        &-button {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__rights {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        column-gap: 40px;
+
+        @include mobile {
+            flex-direction: column;
+            row-gap: 15px;
+        }
+    }
+}

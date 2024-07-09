@@ -8,10 +8,14 @@
     "./properties/globals";
 
 @import 
-    "./blocks/colored",
-    "./blocks/button",
     "./blocks/grid",
+    "./blocks/button",
+    "./blocks/colored",
+    "./blocks/text-input",
+    "./blocks/text-area",
+    "./blocks/radio-button",
     "./blocks/link",
+    "./blocks/menu-link",
     "./blocks/divider",
     "./blocks/burger-button",
     "./blocks/icon",
@@ -25,5 +29,10 @@
     "./blocks/team",
     "./blocks/painted",
     "./blocks/banner",
+    "./blocks/contact-form",
+    "./blocks/form-element",
     "./blocks/services",
-    "./blocks/header";
+    "./blocks/testimonials",
+    "./blocks/footer",
+    "./blocks/header",
+    "./blocks/contact-us";

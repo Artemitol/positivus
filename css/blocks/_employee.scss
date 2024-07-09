@@ -11,7 +11,7 @@
     row-gap: 28px;
 
     @include mobile {
-        --padding: 40px 50px;
+        --padding: 25px;
         
         max-width: var(--maxWidth);
     }
@@ -43,6 +43,16 @@
             content: '';
             background-image: url(/assets/mask.svg);
             margin-left: 10px;
+        }
+
+        @include tablet-small {
+            width: 30%;
+            height: auto;
+        }
+
+        @include mobile-small {
+            width: 30%;
+            height: auto;
         }
     }
 }
